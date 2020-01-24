@@ -6,7 +6,7 @@
 int is_permutation(int x, int y) {
 	std::unordered_map<int, int> digit_to_count;
 	while (x) {
-		digit_to_count[x % 10] += 1;
+		++digit_to_count[x % 10];
 		x /= 10;
 	}
 
