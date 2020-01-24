@@ -5,6 +5,8 @@
 extern "C" {
 #endif
 
+// The declaration of this function most only contain C-types. E.g it must
+// must return int not bool.
 int is_permutation(int x, int y);
 
 #ifdef __cplusplus
